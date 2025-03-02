@@ -50,7 +50,7 @@ function Input({ tasks, setTasks }) {
             <input
                 type="text"
                 value={inputValue}
-                placeholder="Write task here..."
+                placeholder="Write task here... (e.g. 'do maths homework #school')"
                 onChange={(e) => setInputValue(e.target.value)}
                 onKeyDown={handleKeyDown}
                 className="w-200 p-3 mx-5 rounded border-black border-2 border-solid outline-0 bg-white"
