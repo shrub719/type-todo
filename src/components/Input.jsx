@@ -53,7 +53,7 @@ function Input({ tasks, setTasks }) {
                 placeholder="Write task here..."
                 onChange={(e) => setInputValue(e.target.value)}
                 onKeyDown={handleKeyDown}
-                className="w-200 p-3 rounded border-black border-2 border-solid outline-0 bg-white"
+                className="w-200 p-3 mx-5 rounded border-black border-2 border-solid outline-0 bg-white"
             ></input>
         </div>
     );
