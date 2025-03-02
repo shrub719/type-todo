@@ -29,7 +29,7 @@ function Home() {
 
     return (
         <div className="wrapper">
-            <h1 className="p-5 mt-5 text-center text-5xl font-bold">Todo</h1>
+            <h1 className="p-5 mt-5 text-center text-5xl font-bold">Type Todo</h1>
             <div className="flex flex-nowrap justify-center overflow-x-scroll">
                 {columns.length !== 0 ? columns : <p className="mt-10 text-gray-600">No tasks yet. Add one below.</p>}
             </div>
