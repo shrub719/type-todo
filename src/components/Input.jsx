@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { v4 as uuidv4 } from "uuid";
 
 function Input({ tasks, setTasks }) {
     const [inputValue, setInputValue] = useState("");
@@ -15,7 +16,7 @@ function Input({ tasks, setTasks }) {
             taskCategory = "other"
         }
 
-        const newTask = {title: text, id: self.crypto.randomUUID(), completed: false};
+        const newTask = {title: text, id: uuidv4(), completed: false};
         
         if (tasks.filter(category => category.name === taskCategory).length !== 0) {
             setTasks(tasks => tasks.map(category =>
